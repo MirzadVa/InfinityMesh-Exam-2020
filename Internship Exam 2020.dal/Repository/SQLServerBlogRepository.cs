@@ -35,11 +35,20 @@ namespace Internship_Exam_2020.dal.Repository
             return new BlogViewModel(blogDomain);
         }
 
+        public async Task<BlogViewModel> GetAllBlogs(CancellationToken cancellationToken = default)
+        {
+            const int max = 1000;
+            var collection = await _appDbContext.Blogs.Take(max).ToListAsync();
+            return new BlogViewModel(collection);
+        }
+
         public async Task<BlogViewModel> GetBlogs(CancellationToken cancellationToken = default)
         {
             const int maxTop = 5;
             var collection = await _appDbContext.Blogs.Take(maxTop).ToListAsync(cancellationToken);
             return new BlogViewModel(collection);
         }
+
+
     }
 }

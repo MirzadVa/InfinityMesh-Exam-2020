@@ -25,6 +25,12 @@ namespace Internship_Exam_2020.Controllers
             var blogs = await _blogRepository.GetBlogs();
             return Ok(blogs);
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var blogs = await _blogRepository.GetAllBlogs();
+            return Ok(blogs);
+        }
         [HttpPost]
         public async Task<IActionResult> AddBlog([FromBody] BlogDto blog)
         {
