@@ -49,6 +49,14 @@ namespace Internship_Exam_2020
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
+            app.UseCors(builder =>
+            {
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
             app.UseStaticFiles();
 
             app.UseRouting();

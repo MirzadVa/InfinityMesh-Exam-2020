@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Internship_Exam_2020.dal.Repository;
+using Internship_Exam_2020.dal.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Internship_Exam_2020.Controllers
@@ -24,7 +25,12 @@ namespace Internship_Exam_2020.Controllers
             var blogs = await _blogRepository.GetBlogs();
             return Ok(blogs);
         }
-
+        [HttpPost]
+        public async Task<IActionResult> AddBlog([FromBody] BlogDto blog)
+        {
+            var newBlog = await _blogRepository.AddBlog(blog);
+            return Ok(newBlog);
+        }
 
     }
 }

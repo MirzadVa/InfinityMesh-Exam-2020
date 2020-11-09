@@ -10,5 +10,6 @@ namespace Internship_Exam_2020.dal.Repository
     public interface IBlogRepository
     {
         Task<BlogViewModel> GetBlogs(CancellationToken cancellationToken = default);
+        Task<BlogViewModel> AddBlog(BlogDto blog, CancellationToken cancellationToken = default);
     }
 }

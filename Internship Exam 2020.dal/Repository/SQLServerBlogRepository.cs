@@ -20,6 +20,21 @@ namespace Internship_Exam_2020.dal.Repository
             _appDbContext = appDbContext;
         }
 
+        public async Task<BlogViewModel> AddBlog(BlogDto blog, CancellationToken cancellationToken = default)
+        {
+            var blogDomain = new Blog 
+            {
+                Id = blog.Id,
+                Title = blog.Title,
+                Summary = blog.Summary,
+                Content = blog.Content,
+                UserId = blog.UserId
+            };
+            await _appDbContext.Blogs.AddAsync(blogDomain, cancellationToken);
+            await _appDbContext.SaveChangesAsync(cancellationToken);
+            return new BlogViewModel(blogDomain);
+        }
+
         public async Task<BlogViewModel> GetBlogs(CancellationToken cancellationToken = default)
         {
             const int maxTop = 5;
