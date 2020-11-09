@@ -1,0 +1,9 @@
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\bin\Debug\netstandard2.0\Internship Exam 2020.dal.deps.json
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\bin\Debug\netstandard2.0\Internship Exam 2020.dal.dll
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\obj\Debug\netstandard2.0\Internship Exam 2020.dal.csprojAssemblyReference.cache
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\obj\Debug\netstandard2.0\Internship Exam 2020.dal.AssemblyInfoInputs.cache
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\obj\Debug\netstandard2.0\Internship Exam 2020.dal.AssemblyInfo.cs
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\bin\Debug\netstandard2.0\Internship Exam 2020.dal.pdb
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\obj\Debug\netstandard2.0\Internship Exam 2020.dal.dll
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\obj\Debug\netstandard2.0\Internship Exam 2020.dal.pdb
+C:\Users\mirza\Desktop\Internship Exam 2020\Internship Exam 2020.dal\obj\Debug\netstandard2.0\Internship Exam 2020.dal.csproj.CoreCompileInputs.cache
